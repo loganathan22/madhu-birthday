@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#180b12">
+  <title>For CS Madhu — 25 ❤️</title>
+  <style>#startButton{position:relative;z-index:1002;touch-action:manipulation;-webkit-tap-highlight-color:transparent;user-select:none;} .start-screen{touch-action:manipulation;}</style>
+  <meta name="description" content="A romantic birthday letter for CS Madhu.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Great+Vibes&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="startScreen" class="start-screen">
+    <div class="start-glow"></div>
+    <div class="start-content">
+      <div class="tiny-heart">♥</div>
+      <p class="start-eyebrow">A little surprise for</p>
+      <h1>CS Madhu</h1>
+      <p class="start-copy">Turn the music on and enter our little world.</p>
+      <button id="startButton" class="start-button" type="button" onclick="openHeart(event)">
+        <span>♥</span> Open my heart <span>♥</span>
+      </button>
+      <p class="start-note">Music will begin when you tap.</p>
+    </div>
+  </div>
+
+  <audio id="bgMusic" preload="auto" loop playsinline>
+    <source src="last_7_minutes(2).mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="musicToggle" class="music-toggle" aria-label="Pause music">
+    <span id="musicIcon">♫</span>
+    <span id="musicLabel">Music on</span>
+  </button>
+
+  <div class="floating-hearts" aria-hidden="true"></div>
+
+  <main id="page">
+
+    <!-- HERO -->
+    <section class="hero">
+      <img class="hero-photo" src="main.png" alt="A special memory">
+      <div class="hero-shade"></div>
+      <div class="hero-vignette"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">To the girl who means everything</p>
+        <h1>Happy 25th<br><span>Birthday, Madhu</span></h1>
+        <div class="hero-line"><i></i><b>♥</b><i></i></div>
+        <p class="hero-sub">My favourite place. My papa. My world. My gundu. My everything.</p>
+        <button class="down" onclick="document.getElementById('letter').scrollIntoView({behavior:'smooth'})">
+          <span>There is something I want to tell you</span>
+          <b>↓</b>
+        </button>
+      </div>
+    </section>
+
+    <!-- LETTER -->
+    <section class="letter" id="letter">
+      <div class="petal petal-a">❀</div>
+      <div class="petal petal-b">❀</div>
+
+      <div class="letter-wrap">
+        <p class="section-label">A birthday letter</p>
+        <div class="letter-paper">
+          <div class="paper-corner corner-1">♥</div>
+          <div class="paper-corner corner-2">♥</div>
+
+          <p class="hello">My love,</p>
+
+          <h2>Happy 25th Birthday<br><em>CS Madhu</em> ❤️</h2>
+
+          <p>My favourite place, my papa, my world, gundu, aunty and everything.</p>
+          <p>First birthday as <strong>CS Madhu</strong>. I am so proud of you.</p>
+
+          <div class="ornament">✦ &nbsp; ♥ &nbsp; ✦</div>
+
+          <p>I hope you're good. I know this is probably the last thing you expected to see today.</p>
+
+          <p>Happy birthday. Stay happy and stay you.</p>
+
+          <p>Still learning to love you right. You're the one I want to keep getting better at.</p>
+
+          <p>I know I hurt you, and I'm not asking you to forget that. I just genuinely feel like I made a mistake, and this time I could actually be what you deserve.</p>
+
+          <p>I'm not asking you to trust me straight away. Just asking if you'd be open to meeting up and talking in person.</p>
+
+          <p class="big-question">Would you give me that chance?</p>
+
+          <p>And I miss you <strong>so much</strong> and I love you <strong>so much</strong>. ❤️</p>
+
+          <div class="signature">
+            <span>Your favourite,</span>
+            <b>Loggy</b>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEMORIES -->
+    <section class="memories" id="memories">
+      <div class="memories-top">
+        <p class="section-label">Our memories</p>
+        <h2>Six moments,<br><em>one love story.</em></h2>
+        <p>Every picture holds a little piece of us.</p>
+      </div>
+
+      <div class="gallery">
+        <figure class="memory m1">
+          <div class="image-frame"><img src="1.jpg" alt="Our memory 1" loading="lazy"></div>
+          <figcaption><span>01</span> A day I want to keep forever</figcaption>
+        </figure>
+
+        <figure class="memory m2">
+          <div class="image-frame"><img src="2.jpg" alt="Our memory 2" loading="lazy"></div>
+          <figcaption><span>02</span> Just you and me</figcaption>
+        </figure>
+
+        <figure class="memory m3">
+          <div class="image-frame"><img src="3.jpg" alt="Our memory 3" loading="lazy"></div>
+          <figcaption><span>03</span> One of my favourite smiles</figcaption>
+        </figure>
+
+        <figure class="memory m4">
+          <div class="image-frame"><img src="4.jpg" alt="Our memory 4" loading="lazy"></div>
+          <figcaption><span>04</span> You make ordinary days special</figcaption>
+        </figure>
+
+        <figure class="memory m5">
+          <div class="image-frame"><img src="5.jpg" alt="Our memory 5" loading="lazy"></div>
+          <figcaption><span>05</span> A memory close to my heart</figcaption>
+        </figure>
+
+        <figure class="memory m6">
+          <div class="image-frame"><img src="6.jpg" alt="Our memory 6" loading="lazy"></div>
+          <figcaption><span>06</span> Always, a little piece of us</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- END -->
+    <section class="ending">
+      <div class="ending-orbit"></div>
+      <div class="ending-content">
+        <p class="section-label">One last thing</p>
+        <div class="large-heart">♥</div>
+        <h2>Happy Birthday,<br><em>my Madhu.</em></h2>
+        <p class="ending-copy">25 looks beautiful on you.</p>
+        <p class="forever">With love, always — Loggy</p>
+        <button class="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ &nbsp; Start again</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>Made with love for CS Madhu · 25 ❤️</footer>
+  
+<script>
+(function () {
+  const screen = document.getElementById("startScreen");
+  const audio = document.getElementById("bgMusic");
+  const toggle = document.getElementById("musicToggle");
+  const icon = document.getElementById("musicIcon");
+  const label = document.getElementById("musicLabel");
+
+  window.openHeart = async function (event) {
+    if (event) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+
+    try {
+      audio.volume = 0.72;
+      audio.muted = false;
+      await audio.play();
+      icon.textContent = "♫";
+      label.textContent = "Music on";
+    } catch (e) {
+      // Keep the page usable even if the browser blocks the local audio.
+      icon.textContent = "▶";
+      label.textContent = "Play music";
+    }
+
+    screen.classList.add("hidden");
+    document.body.classList.remove("locked");
+  };
+
+  toggle.addEventListener("click", async function (event) {
+    event.preventDefault();
+    if (audio.paused) {
+      try {
+        audio.volume = 0.72;
+        await audio.play();
+        icon.textContent = "♫";
+        label.textContent = "Music on";
+      } catch (e) {
+        icon.textContent = "▶";
+        label.textContent = "Play music";
+      }
+    } else {
+      audio.pause();
+      icon.textContent = "▶";
+      label.textContent = "Play music";
+    }
+  });
+
+  audio.addEventListener("error", function () {
+    label.textContent = "Music unavailable";
+  });
+})();
+</script>
+
+</body>
+</html>
